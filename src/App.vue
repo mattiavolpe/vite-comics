@@ -1,54 +1,13 @@
 <script>
+import SiteHeader from './components/SiteHeader.vue';
 import ExternalSites from './components/ExternalSites.vue';
 export default {
   data() {
     return {
-      activeItem: 0,
-      menuItems: [
-        {
-          title: "Characters",
-          url: "#",
-        },
-        {
-          title: "Comics",
-          url: "#",
-        },
-        {
-          title: "Movies",
-          url: "#",
-        },
-        {
-          title: "TV",
-          url: "#",
-        },
-        {
-          title: "Games",
-          url: "#",
-        },
-        {
-          title: "Collectibles",
-          url: "#",
-        },
-        {
-          title: "Videos",
-          url: "#",
-        },
-        {
-          title: "Fans",
-          url: "#",
-        },
-        {
-          title: "News",
-          url: "#",
-        },
-        {
-          title: "Shop",
-          url: "#",
-        },
-      ],
     }
   },
   components: {
+    SiteHeader,
     ExternalSites,
   }
 }
@@ -56,18 +15,7 @@ export default {
 
 <template>
 
-  <header class="d-flex align-items-center justify-content-center bg-light">
-    <div class="container d-flex justify-content-between align-items-center h-100">
-      <div class="left">
-        <img src="./assets/img/dc-logo.png" alt="DC Logo">
-      </div>
-      <ul class="right d-flex h-100">
-        <li v-for="(item, index) in menuItems" :class="activeItem === index ? 'active' : ''" class="d-flex align-items-center mx-3 h-100" @click="activeItem = index">
-          <a :href="item.url">{{ item.title.toUpperCase() }}</a>
-        </li>
-      </ul>
-    </div>
-  </header>
+  <SiteHeader></SiteHeader>
 
   <main>
     <section id="main_section" class="bg-dark">
@@ -169,6 +117,3 @@ export default {
   </footer>
 
 </template>
-
-<style>
-</style>

@@ -1,6 +1,5 @@
 <script>
   import ExternalSites from '../assets/data/ExternalSites.js';
-  console.log(ExternalSites);
   export default {
     name: "ExternalSites",
     data() {

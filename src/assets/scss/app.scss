@@ -1,38 +1,14 @@
 @use './../../../node_modules/bootstrap/scss/bootstrap.scss';
-
-body {
-  font-family: 'Roboto', sans-serif;
-}
+@use './partials/_common.scss';
+@use './partials/_siteHeader.scss';
+@use './partials/_externalSites.scss';
 
 a {
-  text-decoration: none;
   color: #1e1e1e;
 }
 
-header {
-  height: 130px;
-
-  li.active {
-    border-bottom: 5px solid #0282f9;
-
-    a {
-      color: #0282f9;
-    }
-  }
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  a {
-    font-weight: 700;
-  }
-}
-
-#external_sites {
-  background-color: #0282f9;
+ul a {
+  font-weight: 700;
 }
 
 #footer_links {
