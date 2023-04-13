@@ -23,8 +23,14 @@ header {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 
   a {
     font-weight: 700;
   }
+}
+
+#external_sites {
+  background-color: #0282f9;
 }
