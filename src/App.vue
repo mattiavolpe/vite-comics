@@ -79,7 +79,7 @@ export default {
 
 <template>
 
-  <header class="d-flex align-items-center justify-content-center">
+  <header class="d-flex align-items-center justify-content-center bg-light">
     <div class="container d-flex justify-content-between align-items-center h-100">
       <div class="left">
         <img src="./assets/img/dc-logo.png" alt="DC Logo">
