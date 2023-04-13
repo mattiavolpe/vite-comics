@@ -64,6 +64,14 @@ export default {
     </div>
   </header>
 
+  <main>
+    <section id="main_section" class="bg-dark">
+        <div class="container">
+          <h1 class="m-0 py-5 text-light">--&gt; Content goes here &lt;--</h1>
+        </div>
+      </section>
+  </main>
+
 </template>
 
 <style>
