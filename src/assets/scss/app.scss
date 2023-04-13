@@ -1,5 +1,30 @@
 @use './../../../node_modules/bootstrap/scss/bootstrap.scss';
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #1e1e1e;
+}
+
+header {
+  height: 130px;
+
+  li.active {
+    border-bottom: 5px solid #0282f9;
+
+    a {
+      color: #0282f9;
+    }
+  }
+}
+
 ul {
   list-style: none;
+
+  a {
+    font-weight: 700;
+  }
 }
