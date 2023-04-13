@@ -2,6 +2,7 @@
 export default {
   data() {
     return {
+      activeItem: 0,
       menuItems: [
         {
           title: "Characters",
@@ -84,7 +85,7 @@ export default {
         <img src="./assets/img/dc-logo.png" alt="DC Logo">
       </div>
       <ul class="right d-flex h-100">
-        <li v-for="(item, index) in menuItems" :class="index === 0 ? 'active' : ''" class="d-flex align-items-center mx-3 h-100">
+        <li v-for="(item, index) in menuItems" :class="activeItem === index ? 'active' : ''" class="d-flex align-items-center mx-3 h-100" @click="activeItem = index">
           <a :href="item.url">{{ item.title.toUpperCase() }}</a>
         </li>
       </ul>
