@@ -1,0 +1,23 @@
+@use './variables.scss' as *;
+
+#bottom_banner {
+  background-color: $dark;
+  padding: 1.5rem 0;
+
+  h4 {
+    color: $accent;
+    font-weight: 700;
+  }
+
+  button {
+    background-color: transparent;
+    border: 2px solid $accent;
+    padding: 0.5rem 1rem;
+    color: $light;
+    font-weight: 500;
+  }
+
+  li:nth-child(even) {
+    margin: 0 1rem;
+  }
+}

@@ -2,57 +2,5 @@
 @use './partials/_common.scss';
 @use './partials/_siteHeader.scss';
 @use './partials/_externalSites.scss';
-
-a {
-  color: #1e1e1e;
-}
-
-ul a {
-  font-weight: 700;
-}
-
-#footer_links {
-  background-image: url("./../img/footer-bg.jpg");
-  background-size: cover;
-  overflow: hidden;
-
-  h4 {
-    margin: 1rem 0;
-  }
-
-  li {
-    padding: 0.125rem 0;
-  }
-
-  a {
-    color: #b0b0b0;
-    font-weight: 400;
-  }
-
-  img {
-    transform: scale(1.5);
-    transform-origin: 100% 50%;
-  }
-}
-
-#bottom_banner {
-  background-color: #303030;
-  padding: 1.5rem 0;
-
-  h4 {
-    color: #0282f9;
-    font-weight: 700;
-  }
-
-  button {
-    background-color: transparent;
-    border: 2px solid #0282f9;
-    padding: 0.5rem 1rem;
-    color: #f8f9fa;
-    font-weight: 500;
-  }
-
-  li:nth-child(even) {
-    margin: 0 1rem;
-  }
-}
+@use './partials/footerLinks';
+@use './partials/bottomBanner';

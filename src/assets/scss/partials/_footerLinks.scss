@@ -1,0 +1,25 @@
+@use './variables.scss' as *;
+
+#footer_links {
+  background-image: url("./../img/footer-bg.jpg");
+  background-size: cover;
+  overflow: hidden;
+
+  h4 {
+    margin: 1rem 0;
+  }
+
+  li {
+    padding: 0.125rem 0;
+  }
+
+  a {
+    color: $neutral;
+    font-weight: 400;
+  }
+
+  img {
+    transform: scale(1.5);
+    transform-origin: 100% 50%;
+  }
+}

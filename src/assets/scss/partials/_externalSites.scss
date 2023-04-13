@@ -1,3 +1,9 @@
+@use './variables.scss' as *;
+
 #external_sites {
-  background-color: #0282f9;
+  background-color: $accent;
+
+  a {
+    font-weight: 700;
+  }
 }
