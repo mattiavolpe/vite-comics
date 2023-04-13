@@ -58,3 +58,24 @@ ul {
     transform-origin: 100% 50%;
   }
 }
+
+#bottom_banner {
+  background-color: #303030;
+  padding: 1.5rem 0;
+
+  h4 {
+    color: #0282f9;
+    font-weight: 700;
+  }
+
+  button {
+    background-color: transparent;
+    border: 2px solid #0282f9;
+    padding: 0.5rem 1rem;
+    color: #e1e1e1;
+  }
+
+  li:nth-child(even) {
+    margin: 0 1rem;
+  }
+}
