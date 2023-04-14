@@ -20,7 +20,7 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .card_element {
     width: calc(100% / 6);
   }
