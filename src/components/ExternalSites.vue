@@ -25,7 +25,3 @@
     </ul>
   </section>
 </template>
-
-<style>
-
-</style>

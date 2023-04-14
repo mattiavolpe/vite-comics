@@ -1,6 +1,9 @@
 @use './../../../node_modules/bootstrap/scss/bootstrap.scss';
 @use './partials/_common.scss';
 @use './partials/_siteHeader.scss';
+@use './partials/_siteMain.scss';
+@use './partials/_cardContainer.scss';
+@use './partials/_cardElement.scss';
 @use './partials/_externalSites.scss';
 @use './partials/footerLinks';
 @use './partials/bottomBanner';

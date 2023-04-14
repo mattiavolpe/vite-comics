@@ -1,0 +1,26 @@
+@use './variables.scss' as *;
+
+main {
+
+  #jumbotron_container {
+    height: 400px;
+    overflow: hidden;
+  }
+
+  .current_series {
+    color: $light;
+    background-color: $accent;
+    width: max-content;
+    padding: 0.5rem 1rem;
+    transform: translate(0, -50%);
+  }
+
+  .load_more {
+    color: $light;
+    background-color: $accent;
+    font-weight: 500;
+    border: none;
+    padding: 0.5rem 5rem;
+    margin-bottom: 2rem;
+  }
+}
