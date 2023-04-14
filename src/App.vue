@@ -25,7 +25,7 @@ export default {
   <main>
     <section id="main_section" class="bg-dark">
       <div class="container">
-        <CardContainer></CardContainer>
+        <CardContainer class="card_container"></CardContainer>
       </div>
     </section>
     <ExternalSites></ExternalSites>
@@ -34,3 +34,12 @@ export default {
   <SiteFooter></SiteFooter>
 
 </template>
+
+<style lang="scss">
+  .card_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+</style>

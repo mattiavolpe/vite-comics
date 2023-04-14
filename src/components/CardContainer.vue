@@ -1,15 +1,27 @@
 <script>
-  import CardsList from '../assets/data/dc-comics.json'
+  import CardsList from '../assets/data/dc-comics.json';
+  import CardElement from './CardElement.vue';
   export default {
     name: "CardContainer",
     data() {
       return {
         CardsList,
       }
+    },
+    components: {
+      CardElement,
     }
   }
 </script>
 
 <template>
-  <CardElement></CardElement>
+  <div>
+    <CardElement class="card_element" v-for="item in CardsList" :img="item.thumb" :title="item.series"></CardElement>
+  </div>
 </template>
+
+<style lang="scss">
+  .card_element {
+    width: calc(100% / 6);
+  }
+</style>
