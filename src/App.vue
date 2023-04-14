@@ -28,6 +28,7 @@ export default {
     </div>
     <section id="main_section" class="bg-dark">
       <div class="container">
+        <h4 class="current_series">CURRENT SERIES</h4>
         <CardContainer class="card_container"></CardContainer>
       </div>
     </section>
@@ -39,9 +40,18 @@ export default {
 </template>
 
 <style lang="scss">
+@use './assets/scss/partials/variables.scss' as *;
   #jumbotron_container {
     height: 300px;
     overflow: hidden;
+  }
+
+  .current_series {
+    color: $light;
+    background-color: $accent;
+    width: max-content;
+    padding: 0.5rem 1rem;
+    transform: translate(0, -50%);
   }
 
   .card_container {
