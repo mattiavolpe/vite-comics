@@ -27,9 +27,10 @@ export default {
       <img class="img-fluid" src="./assets/img/jumbotron.jpg" alt="Jumbotron">
     </div>
     <section id="main_section" class="bg-dark">
-      <div class="container">
+      <div class="container text-center">
         <h4 class="current_series">CURRENT SERIES</h4>
         <CardContainer class="card_container"></CardContainer>
+        <button class="load_more">LOAD MORE</button>
       </div>
     </section>
     <ExternalSites></ExternalSites>
@@ -59,5 +60,14 @@ export default {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+  }
+
+  .load_more {
+    color: $light;
+    background-color: $accent;
+    font-weight: 500;
+    border: none;
+    padding: 0.5rem 5rem;
+    margin-bottom: 2rem;
   }
 </style>
