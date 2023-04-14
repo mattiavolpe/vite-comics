@@ -1,7 +1,9 @@
 <script>
 import SiteHeader from './components/SiteHeader.vue';
+import CardContainer from './components/CardContainer.vue';
 import ExternalSites from './components/ExternalSites.vue';
 import SiteFooter from './components/SiteFooter.vue';
+
 export default {
   data() {
     return {
@@ -9,6 +11,7 @@ export default {
   },
   components: {
     SiteHeader,
+    CardContainer,
     ExternalSites,
     SiteFooter,
   }
@@ -22,7 +25,7 @@ export default {
   <main>
     <section id="main_section" class="bg-dark">
       <div class="container">
-        <h1 class="m-0 py-5 text-light">--&gt; Content goes here &lt;--</h1>
+        <CardContainer></CardContainer>
       </div>
     </section>
     <ExternalSites></ExternalSites>
