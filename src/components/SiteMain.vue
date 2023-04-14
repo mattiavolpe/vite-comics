@@ -17,7 +17,7 @@
     </div>
     <section id="main_section" class="bg-dark">
       <div class="container text-center">
-        <h4 class="current_series">CURRENT SERIES</h4>
+        <h6 class="current_series">CURRENT SERIES</h6>
         <CardContainer></CardContainer>
         <button class="load_more">LOAD MORE</button>
       </div>
